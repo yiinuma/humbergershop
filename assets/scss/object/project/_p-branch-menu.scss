@@ -1,0 +1,243 @@
+.p-branch-menu {
+  position: relative;
+  margin-top: 120px;
+  display: grid;
+  // grid-template-rows: 120px 1fr;
+  grid-template-columns:
+    calc(111 / 1553 * 100%) minmax(357px, 625px) calc(80 / 1553 * 100%) minmax(
+      357px,
+      625px
+    )
+    calc(111 / 1553 * 100%);
+}
+
+// .p-branch-menu:before {
+//   content: "";
+//   display: block;
+//   padding-top: calc(1193 / 625 * 100%);
+// }
+
+.p-branch-menu__list01 {
+  // background-color: red;
+  height: 100%;
+  grid-column: 2/3;
+}
+
+.p-branch-menu__list02 {
+  // background-color: gold;
+  height: 100%;
+  grid-column: 4/5;
+}
+
+// .aspect-fixer {
+//   padding-bottom: calc(1193 / 625 * 100%);
+// }
+
+.p-branch-menu__list01,
+.p-branch-menu__list02 {
+  position: relative;
+
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // height: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  h2 {
+    position: absolute;
+    top: calc(20 / 1193 * 100%);
+    left: calc(19 / 625 * 100%);
+    font-size: 8rem;
+    line-height: 1.1;
+    color: #eaeaea;
+  }
+
+  .p-branch-menu__list--dl01,
+  .p-branch-menu__list--dl02 {
+    display: inline-block;
+    height: 174px;
+    // margin: 0 20px 20px 20px;
+    font-family: "M PLUS 1p";
+    background-color: #fff;
+    opacity: 0.8;
+    color: #3c2a10;
+
+    dt {
+      padding-top: 22px;
+      padding-left: 19px;
+      font-size: 2.4rem;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    dd {
+      padding-top: 25px;
+      padding-left: 19px;
+      padding-right: 25px;
+      padding-bottom: 3.5rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.2;
+      overflow: hidden;
+    }
+  }
+
+  .p-branch-menu__list--dl01 {
+    position: absolute;
+    top: calc((315 / 681 * 100%) + (100% - 681px) * 0.49);
+    left: calc(20 / 625 * 100%);
+    right: calc(20 / 625 * 100%);
+    // transform: translate(0, -50%);
+  }
+
+  .p-branch-menu__list--dl02 {
+    position: absolute;
+    top: calc(
+      (315 / 681 * 100%) + (100% - 681px) * 0.49 + 171px + (10 / 681 * 100%)
+    );
+    left: calc(20 / 625 * 100%);
+    right: calc(20 / 625 * 100%);
+    // transform: translate(0, -50%);
+  }
+}
+
+.access {
+  margin-top: 134px;
+  height: auto;
+  font-family: "M PLUS 1p";
+  background-color: #000;
+
+  &__map {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+
+    iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      // vertical-align: bottom;
+      background-color: #fff;
+      opacity: 0.7;
+    }
+
+    &--ttl {
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 950px;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.29;
+      color: #fff;
+
+      h2 {
+        padding-top: 90px;
+        padding-left: 119px;
+        font-size: 3.6rem;
+        line-height: 1.2;
+        opacity: 1;
+      }
+
+      p {
+        padding-top: 127px;
+        padding-left: 119px;
+        padding-right: 134px;
+        line-height: 2;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@include mq-down(md) {
+  .p-branch-menu {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 3% auto 1% auto 3%;
+  }
+
+  .p-branch-menu__list01 {
+    // background-color: red;
+    height: 100%;
+    grid-column: 2/3;
+  }
+
+  .p-branch-menu__list02 {
+    // background-color: gold;
+    height: 100%;
+    grid-column: 4/5;
+  }
+
+  .p-branch-menu__list01 {
+    margin-right: calc(40 / 834 * 100%);
+  }
+
+  .p-branch-menu__list01 h2,
+  .p-branch-menu__list02 h2 {
+    font-size: 4rem;
+  }
+
+  .access {
+    margin-top: 40px;
+
+    &__map--ttl h2 {
+      padding-top: 40px;
+      padding-left: 42px;
+    }
+
+    p {
+      padding-top: 45px;
+      padding-left: 42px;
+      padding-right: 29px;
+    }
+  }
+}
+
+@include mq-down(sm) {
+  .p-branch-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    &__list01 {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  .access__map {
+    position: relative;
+    padding-bottom: 177.78%;
+    height: 0;
+    overflow: hidden;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.4rem;
+      padding-top: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      height: 510px;
+      overflow: hidden;
+    }
+  }
+}

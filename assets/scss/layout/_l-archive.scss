@@ -1,0 +1,8 @@
+.l-archive {
+  max-width: 1553px;
+  grid-row: 2/3;
+}
+
+@include mq-down(md) {
+  // grid-column: 1/3;
+}

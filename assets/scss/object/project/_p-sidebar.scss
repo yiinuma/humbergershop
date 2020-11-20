@@ -1,0 +1,81 @@
+.p-sidebar__inner {
+  height: 100%;
+  width: auto;
+  background-color: #f2ede9;
+
+  i {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #707070;
+  }
+  h2 {
+    font-size: 3.4rem;
+    line-height: 1.3;
+    color: #707070;
+    padding-top: 82px;
+    padding-left: 42px;
+  }
+}
+
+.p-sidebar__menu {
+  font-family: "M+ Type-1 (general-j) Regular";
+  padding-top: 90px;
+  padding-left: 46px;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  a {
+    display: block;
+  }
+  a:visited {
+    color: #707070;
+  }
+  a:hover {
+    color: #a0a0a0;
+  }
+  &--child {
+    padding-top: 45px;
+    font-size: 2rem;
+    line-height: 1.2;
+    li {
+      padding-left: 26px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@include mq-down(wrap) {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(376px); //右から左へスライド
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .p-sidebar__inner {
+    display: none;
+  }
+  .p-sidebar__inner.is-open {
+    // sidebarの高さをl-containerに合わせる呪文
+    // l-containerにoverflow: hidden;も書く
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
+
+    display: block;
+    height: auto;
+    animation: fadeIn 0.3s linear 0s;
+    i {
+      display: block;
+    }
+    h2 {
+      display: none;
+    }
+    .p-sidebar__menu {
+      padding-top: 188px;
+    }
+  }
+}
