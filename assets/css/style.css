@@ -784,7 +784,7 @@ ul {
   color: #fff;
 }
 
-.p-top-img span {
+.p-top-img p span {
   vertical-align: middle;
   font-size: 1.6rem;
   color: #fff;
@@ -796,11 +796,17 @@ ul {
   }
   .p-top-img .top-sm-img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
+    background-color: #000;
   }
   .p-top-img p {
     left: 25px;
+  }
+  .p-top-img p span {
+    position: absolute;
+    top: 60px;
+    left: 0px;
   }
 }
 
