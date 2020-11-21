@@ -450,6 +450,22 @@ ul {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 1280px) {
+  .l-archive {
+    margin-left: 42px;
+    margin-right: 42px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .l-archive {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .c-button {
@@ -479,13 +495,27 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  justify-content: center;
-  margin: 20px 0;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .c-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .c-card__thumbnail {
-  width: calc(677 / 1353 * 100%);
+  width: 50%;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .c-card__thumbnail {
+    width: 100%;
+  }
 }
 
 .c-card__thumbnail img {
@@ -496,11 +526,114 @@ ul {
   height: 471px;
 }
 
+@media screen and (max-width: 1280px) {
+  .c-card__thumbnail img {
+    height: 354px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-card__thumbnail img {
+    height: calc(230 / 336 * 100%);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .c-card__contents {
-  width: calc((1353 - 677) / 1353 * 100%);
+  width: 50%;
   background-color: #3c2b1c;
   color: #fff;
   font-family: "M PLUS 1p";
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .c-card__contents {
+    width: auto;
+  }
+}
+
+.c-card__heading h3 {
+  padding-top: calc(60 * 100% / 1353 / 0.5);
+  padding-left: 64px;
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1280px) {
+  .c-card__heading h3 {
+    padding-top: 33px;
+    padding-left: 35px;
+    font-size: 2rem;
+  }
+}
+
+.c-card__caption h4 {
+  padding-top: calc(60 * 100% / 1353 / 0.5);
+  padding-left: 63px;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1280px) {
+  .c-card__caption h4 {
+    padding-top: 31px;
+    padding-left: 35px;
+    font-size: 1.6rem;
+  }
+}
+
+.c-card__text p {
+  padding-top: calc(22 * 100% / 1353 / 0.5);
+  padding-left: 63px;
+  padding-right: 63px;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1280px) {
+  .c-card__text p {
+    padding-top: 13px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-card__text p {
+    padding-top: 31px;
+  }
+}
+
+.c-card__button {
+  text-align: center;
+}
+
+.c-card__button a {
+  margin-top: 50px;
+  display: block;
+  padding: 30px 106px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  background-color: #fff;
+  color: #707070;
+  border-radius: 38px;
+}
+
+@media screen and (max-width: 1280px) {
+  .c-card__button a {
+    padding: 13px 41px;
+    margin-top: 45px;
+    margin-bottom: calc(40 / 756 * 100);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-card__button a {
+    margin-top: 40px;
+    margin-bottom: calc(44 / 336 * 100%);
+  }
 }
 
 .p-header__inner {
@@ -644,12 +777,16 @@ ul {
   left: 80px;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
-  margin: 0;
-  padding: 0;
   font-family: "M PLUS 1p";
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.2;
+  color: #fff;
+}
+
+.p-top-img span {
+  vertical-align: middle;
+  font-size: 1.6rem;
   color: #fff;
 }
 
@@ -1007,9 +1144,40 @@ ul {
 .p-archive__contents {
   width: auto;
   height: 100%;
-  margin-top: 67px;
-  margin-left: 100px;
-  margin-right: 100px;
+}
+
+.p-archive__contents h2 {
+  padding-top: 67px;
+}
+
+.p-archive__contents > p {
+  padding-top: 33px;
+  padding-bottom: 70px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1280px) {
+  .p-archive__contents h2 {
+    padding-top: 43px;
+  }
+  .p-archive__contents > p {
+    padding-top: 33px;
+    padding-bottom: 37px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-archive__contents h2 {
+    padding-top: 35px;
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+  .p-archive__contents > p {
+    padding-top: 33px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
 }
 
 .p-footer__inner {
