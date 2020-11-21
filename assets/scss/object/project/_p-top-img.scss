@@ -20,11 +20,12 @@
     font-weight: 400;
     line-height: 1.2;
     color: #fff;
-  }
-  span {
-    vertical-align: middle;
-    font-size: 1.6rem;
-    color: #fff;
+
+    span {
+      vertical-align: middle;
+      font-size: 1.6rem;
+      color: #fff;
+    }
   }
 
   @include mq-down(sm) {
@@ -33,11 +34,17 @@
     }
     .top-sm-img {
       display: block;
-      width: 100%;
-      height: auto;
+      width: auto;
+      height: 100%;
+      background-color: #000;
     }
     p {
       left: 25px;
+      span{
+        position: absolute;
+        top:60px;
+        left:0px
+      }
     }
   }
 }
