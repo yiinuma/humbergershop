@@ -1,14 +1,14 @@
 .p-branch-menu {
   position: relative;
-  margin-top: 120px;
+  margin-top: calc(120 / 1553 * 100%);
   display: grid;
   // grid-template-rows: 120px 1fr;
   grid-template-columns:
-    calc(111 / 1553 * 100%) minmax(357px, 625px) calc(80 / 1553 * 100%) minmax(
-      357px,
-      625px
+    minmax(40px, calc(111 / 1553 * 100%)) minmax(357px, 625px) calc(
+      80 / 1553 * 100%
     )
-    calc(111 / 1553 * 100%);
+    minmax(357px, 625px)
+    minmax(40px, calc(111 / 1553 * 100%));
 }
 
 // .p-branch-menu:before {
@@ -107,7 +107,7 @@
 }
 
 .access {
-  margin-top: 134px;
+  margin-top: calc(154 / 1552 * 100%);
   height: auto;
   font-family: "M PLUS 1p";
   background-color: #000;

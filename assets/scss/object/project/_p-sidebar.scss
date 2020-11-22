@@ -1,3 +1,18 @@
+.p-sidebar__back {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: -200%;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1200;
+  overflow-y: auto;
+}
+.p-sidebar__back.is-open {
+  right: 0;
+  position: fixed;
+}
+
 .p-sidebar__inner {
   height: 100%;
   width: auto;
@@ -11,7 +26,8 @@
     color: #707070;
   }
   h2 {
-    font-size: 3.4rem;
+    // font-size: 3.4rem;
+    font-size: 1.8vw;
     line-height: 1.3;
     color: #707070;
     padding-top: 82px;
@@ -23,8 +39,10 @@
   font-family: "M+ Type-1 (general-j) Regular";
   padding-top: 90px;
   padding-left: 46px;
-  font-size: 2.4rem;
+  // font-size: 2.4rem;
+  font-size: 1.3vw;
   line-height: 1.2;
+
   a {
     display: block;
   }
@@ -36,16 +54,20 @@
   }
   &--child {
     padding-top: 45px;
-    font-size: 2rem;
+    // font-size: 2rem;
+    font-size: 1.05vw;
     line-height: 1.2;
     li {
       padding-left: 26px;
       padding-bottom: 30px;
     }
+    li:last-child {
+      padding-bottom: 52px;
+    }
   }
 }
 
-@include mq-down(wrap) {
+@include mq-down(md) {
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -60,13 +82,13 @@
     display: none;
   }
   .p-sidebar__inner.is-open {
-    // sidebarの高さをl-containerに合わせる呪文
+    // sidebarの高さをl-containerに合わせる
     // l-containerにoverflow: hidden;も書く
-    padding-bottom: 10000px;
-    margin-bottom: -10000px;
-
+    // padding-bottom: 10000px;
+    // margin-bottom: -10000px;
+    overflow-y: scroll;
     display: block;
-    height: auto;
+    height: 100vh;
     animation: fadeIn 0.3s linear 0s;
     i {
       display: block;
@@ -76,6 +98,11 @@
     }
     .p-sidebar__menu {
       padding-top: 188px;
+      margin-bottom: 526px;
+      font-size: 2.4rem;
+      &--child {
+        font-size: 2rem;
+      }
     }
   }
 }

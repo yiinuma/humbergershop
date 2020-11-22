@@ -31,7 +31,7 @@
   // XX = 834 /100 * 0.1rem
   // YY = 100 * (64 - 40 ) / (1920 - 834)
   // ZZ = 40 * 0.1rem
-  font-size: calc(4rem + ((1vw - 0.834rem) * 2.21)); /*4rem-6.4remで可変*/
+  font-size: calc(3.5rem + ((1vw - 0.834rem) * 2.21)); /*4rem-6.4remで可変*/
   font-weight: 700;
   line-height: 84px;
   // padding-left: 65px;
