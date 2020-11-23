@@ -915,17 +915,20 @@ ul {
   .p-top-img p {
     left: 25px;
   }
-  .p-top-img p span {
-    position: absolute;
-    top: 60px;
-    left: 0px;
-  }
 }
 
 .p-top-img p span {
   vertical-align: middle;
   font-size: 1.6rem;
   color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+  .p-top-img p span {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+  }
 }
 
 .p-branch-menu {

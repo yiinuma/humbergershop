@@ -42,17 +42,17 @@
     color: #fff;
     @include mq-down(sm) {
       left: 25px;
-      span {
-        position: absolute;
-        top: 60px;
-        left: 0px;
-      }
     }
 
     span {
       vertical-align: middle;
       font-size: 1.6rem;
       color: #fff;
+      @include mq-down(sm) {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+      }
     }
   }
 }
