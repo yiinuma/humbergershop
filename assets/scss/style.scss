@@ -12,28 +12,28 @@
 // ** Layout
 // ==================================================*/
 
-@import "layout/l-container";
-@import "layout/l-header";
-@import "layout/l-main";
-@import "layout/l-sidebar";
-@import "layout/l-footer";
-@import "layout/l-archive";
+@import "layout/_container";
+@import "layout/_header";
+@import "layout/_main";
+@import "layout/_sidebar";
+@import "layout/_footer";
+@import "layout/_archive";
 
 // /*==================================================
 // ** Object
 // ==================================================*/
 
 // /* Component */
-@import "object/component/c-button";
-@import "object/component/c-card";
-@import "object/component/c-pager";
+@import "object/component/_button";
+@import "object/component/_card";
+@import "object/component/_pager";
 
 // /* Project */
-@import "object/project/p-header";
-@import "object/project/p-top-img";
-@import "object/project/p-branch-menu";
-@import "object/project/p-sidebar";
-@import "object/project/p-archive";
-@import "object/project/p-footer";
+@import "object/project/_header";
+@import "object/project/_top-img";
+@import "object/project/_branch-menu";
+@import "object/project/_sidebar";
+@import "object/project/_archive";
+@import "object/project/_footer";
 
 // /* Utility */
