@@ -5,6 +5,17 @@
     width: 100%;
     vertical-align: bottom;
     background-color: #000;
+    @include mq-down(md) {
+      display: none;
+    }
+  }
+  .top-md-img {
+    display: none;
+    @include mq-down(md) {
+      display: block;
+      width: 100%;
+      background-color: #000;
+    }
     @include mq-down(sm) {
       display: none;
     }
