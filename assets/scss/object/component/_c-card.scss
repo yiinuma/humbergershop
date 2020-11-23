@@ -94,7 +94,7 @@
     text-align: center;
 
     a {
-      margin-top: 50px;
+      margin-top: calc(60 * 100% / 1353 / 0.5);
       display: block;
       padding: 30px 106px;
       font-size: 1.6rem;
@@ -102,16 +102,15 @@
       background-color: #fff;
       color: #707070;
       border-radius: 38px;
-
+      
       @include mq-down(md) {
+        margin-top: calc(45 * 100% / 768 / 0.5);
         padding: 13px 41px;
-        margin-top: 45px;
-        margin-bottom: calc(40 / 756 * 100);
       }
-
+      
       @include mq-down(sm) {
         margin-top: 40px;
-        margin-bottom: calc(44 / 336 * 100%);
+        margin-bottom: calc(40 * 100% / 336 );
       }
     }
   }

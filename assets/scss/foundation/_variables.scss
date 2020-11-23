@@ -32,8 +32,8 @@ $breakpoint-up: (
 
 // max-width
 $breakpoint-down: (
-  "sm": "screen and (max-width: 768px)",
-  "md": "screen and (max-width: 1024px)",
+  "sm": "screen and (max-width: 560px)",
+  "md": "screen and (max-width: 960px)",
   "lg": "screen and (max-width: 1920px)",
   "wrap": "screen and (max-width: 1280px)",
 ) !default;
