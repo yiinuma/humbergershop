@@ -171,12 +171,13 @@
 
     &__map--ttl h2 {
       margin-top: 40px;
-      padding-left: 42px;
+      margin-top: calc(40 / 834 * 100%);
+      margin-left: 42px;
     }
 
     p {
       overflow: hidden;
-      margin-top: calc(45 / 834 * 100%);
+      margin-top: calc(20 / 834 * 100%);
       margin-left: 42px;
       margin-right: 29px;
     }
