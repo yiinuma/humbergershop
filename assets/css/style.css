@@ -1317,6 +1317,7 @@ ul {
 
 .p-sidebar__inner.is-open .p-sidebar__menu--child {
   font-size: 2rem;
+  font-weight: 400;
 }
 
 .p-sidebar__inner i {
@@ -1337,6 +1338,7 @@ ul {
 
 .p-sidebar__menu {
   font-family: "M+ Type-1 (general-j) Regular";
+  font-weight: 500;
   padding-top: 90px;
   padding-left: 46px;
   font-size: 1.3vw;
@@ -1345,6 +1347,7 @@ ul {
 
 .p-sidebar__menu a {
   display: block;
+  font-weight: 400;
 }
 
 .p-sidebar__menu a:visited, .p-sidebar__menu a:link {

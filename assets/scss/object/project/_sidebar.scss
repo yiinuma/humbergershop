@@ -45,13 +45,14 @@
       padding-top: 188px;
       margin-bottom: 526px;
       font-size: 2.4rem;
-
+      
       &--child {
         font-size: 2rem;
+        font-weight: 400;
       }
     }
   }
-
+  
   i {
     display: none;
     position: absolute;
@@ -59,7 +60,7 @@
     right: 25px;
     color: #707070;
   }
-
+  
   > h2 {
     // font-size: 3.4rem;
     font-size: 1.8vw;
@@ -72,6 +73,7 @@
 
 .p-sidebar__menu {
   font-family: "M+ Type-1 (general-j) Regular";
+  font-weight: 500;
   padding-top: 90px;
   padding-left: 46px;
   // font-size: 2.4rem;
@@ -80,6 +82,7 @@
 
   a {
     display: block;
+    font-weight: 400;
   }
 
   a:visited,a:link {
