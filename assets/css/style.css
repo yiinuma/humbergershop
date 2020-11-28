@@ -1596,7 +1596,13 @@ ul {
 }
 
 .p-single .img-center img {
-  width: calc(581 / 1353 * 100%);
+  width: 581px;
+}
+
+@media screen and (max-width: 640px) {
+  .p-single .img-center img {
+    width: 267px;
+  }
 }
 
 .p-single .img-box {
