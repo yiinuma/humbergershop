@@ -356,6 +356,10 @@ ul {
           margin-block-end: 0;
 }
 
+body.is-open {
+  overflow: hidden;
+}
+
 .l-container {
   position: relative;
   max-width: 1920px;
