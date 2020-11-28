@@ -18,6 +18,7 @@
 @import "layout/_sidebar";
 @import "layout/_footer";
 @import "layout/_archive";
+@import "layout/_single";
 
 // /*==================================================
 // ** Object
@@ -30,10 +31,10 @@
 
 // /* Project */
 @import "object/project/_header";
-@import "object/project/_top-img";
 @import "object/project/_branch-menu";
 @import "object/project/_sidebar";
 @import "object/project/_archive";
+@import "object/project/_single";
 @import "object/project/_footer";
 
 // /* Utility */
