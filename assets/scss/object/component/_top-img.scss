@@ -67,6 +67,11 @@
     }
   }
 
+  &--page {
+    @extend .c-top-img--single;
+    background-image: url(/assets/img/top-img-page.png);
+  }
+
   &__text {
     color: #fff;
     font-family: "M PLUS 1p";
